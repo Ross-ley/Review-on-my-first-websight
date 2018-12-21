@@ -5,7 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   <title>Homepage</title>
-  <link rel="stylesheet" href="style.css">
+  <!-- jQuery plugins.css go above the main css  -->
+  <link rel="stylesheet" href="css/style.css">
   <style media="screen">
   span.clear {
     clear: both;
@@ -13,16 +14,121 @@
 }
     </style>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
 </head>
 <body>
+      <div id="slider" style="overflow: scroll">
+        <nav>
+          <ul class="side_bar">
+            <li class="home ">
+              <a style="text-decoration:none; color:#000;" href="#">Home</a>
+            </li>
+            <li class="dropdown"  >
+              <a style="text-decoration:none; cursor:pointer"><td class="dropb hov-blue">Who We Are</td>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu">
+                <ul class="droplist" role="menu">
+                  <li>
+                    <a href="#" class="list-style">Liz Haunch CV</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Sue Ford CV</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Emma McClean CV</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Brian Hudson CV</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Clare Cound CV</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Mimi Basri CV</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Jenny Stokes CV</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+             <li >
+              <a style="text-decoration:none; color:#000;" href="#">Testimonials</a>
+             </li>
+            <li class="dropdown" >
+              <a style="text-decoration:none; cursor:pointer" ><td class="dropb hov-blue">Services</td>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-meun">
+                <ul class="droplist" role="menu">
+                  <li>
+                    <a href="#" class="list-style">Immediate Needs Assessment</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Cast Management</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Vocational Rehabilitation</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li >
+              <a style="text-decoration:none; color:#000;" href="#">News</a>
+            </li>
+            <li >
+              <a style="text-decoration:none; color:#000;" href="#">Case Studies</a>
+            </li>
+            <li class="dropdown">
+              <a style="text-decoration:none; cursor:pointer;" ><td class="dropb hov-blue">Resources</td>
+                <span class="caret"></span>
+              </a>
+              <div class="dropdown-meun">
+                <ul class="droplist" role="menu">
+                  <li>
+                    <a href="#" class="list-style">What is rehabilitation?</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Good lifestyle choices</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Staying positive</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Being positve</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Advice for friends and family</a>
+                  </li>
+                  <li>
+                    <a href="#" class="list-style">Liveing with pain</a>
+                  </li>
+                </ul>
+                <li>
+                  <a style="text-decoration:none; color:#000;" href="#">Contact Us</a>
+                </li>
+          </div>
+        </div>
+  </div>
+  <div class="snap-drawer snap-drawer-right"></div>
+</div>
 <header>
   <div class="con">
   <div class="container">
-    <i class="fas fa-bars fa-3x "></i>
+    <div id="content" class="snap-content">
+      <div id="toolbar">
+        <button type="button" class="btn-menu" id="trigger" style="background-color: #01009a;">
+          <div class="white"></div>
+          <br>
+          <div class="white"></div>
+          <br>
+          <div class="white"></div>
+        </button>
     <div class="mobile-header">
       <div class="logo-div">
         <a href="#">
-          <img src="../images/f-logo.png" alt="Bridge Case  Management's logo" class="Bridge Case Management logo">
+          <img src="images/f-logo.png" alt="Bridge Case  Management's logo" class="Bridge Case Management logo">
         </a>
       </div>
     </div>
@@ -78,115 +184,114 @@
         </div>
       </div>
     </div>
-      <div id="scrolbar-contaner">
-        <nav id="scrolbar">
-          <ul class="nav-bar" >
-            <li class="home">
-              <a style="text-decoration:none; color:#000;" href="#">Home</a>
-            </li>
-            <li id="dropdown" >
-              <a style="text-decoration:none;" href="#"><td class="dropb hov-blue">Who We Are</td>
-                <span class="caret"></span>
-              </a>
-              <div class="dropdown-menu">
-                <ul class="dropdown-contaner" role="menu">
-                  <li>
-                    <a href="#" class="list-style">Liz Haunch CV</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Sue Ford CV</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Emma McClean CV</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Brian Hudson CV</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Clare Cound CV</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Mimi Basri CV</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Jenny Stokes CV</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-             <li>
-              <a style="text-decoration:none; color:#000;" href="#">Testimonials</a>
-             </li>
-            <li id="dropdown">
-              <a style="text-decoration:none;" href="#"><td class="dropb hov-blue">Services</td>
-                <span class="caret"></span>
-              </a>
-              <div class="dropdown-meun">
-                <ul class="dropdown-contaner" role="menu">
-                  <li>
-                    <a href="#" class="list-style">Immediate Needs Assessment</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Cast Management</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Vocational Rehabilitation</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a style="text-decoration:none; color:#000;" href="#">News</a>
-            </li>
-            <li>
-              <a style="text-decoration:none; color:#000;" href="#">Case Studies</a>
-            </li>
-            <li id="dropdown">
-              <a style="text-decoration:none;" href="#"><td class="dropb hov-blue">Resources</td>
-                <span class="caret"></span>
-              </a>
-              <div class="dropdown-meun">
-                <ul class="dropdown-contaner" role="menu">
-                  <li>
-                    <a href="#" class="list-style">What is rehabilitation?</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Good lifestyle choices</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Staying positive</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Being positve</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Advice for friends and family</a>
-                  </li>
-                  <li>
-                    <a href="#" class="list-style">Liveing with pain</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a style="text-decoration:none; color:#000;" href="#">Contact Us</a>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+  <div id="scrolbar-contaner">
+    <nav id="scrolbar">
+      <ul class="nav-bar" >
+        <li class="home ">
+          <a style="text-decoration:none; color:#000;" href="#">Home</a>
+        </li>
+        <li class="dropdown">
+          <a style="text-decoration:none;" href="#"><td class="dropb hov-blue">Who We Are</td>
+            <span class="caret"></span>
+          </a>
+          <div class="dropdown-menu">
+            <ul class="dropdown-contaner children" role="menu">
+              <li>
+                <a href="#" class="list-style">Liz Haunch CV</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Sue Ford CV</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Emma McClean CV</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Brian Hudson CV</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Clare Cound CV</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Mimi Basri CV</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Jenny Stokes CV</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+         <li >
+          <a style="text-decoration:none; color:#000;" href="#">Testimonials</a>
+         </li>
+        <li class="dropdown">
+          <a style="text-decoration:none;" href="#"><td class="dropb hov-blue">Services</td>
+            <span class="caret"></span>
+          </a>
+          <div class="dropdown-meun">
+            <ul class="dropdown-contaner children" role="menu">
+              <li>
+                <a href="#" class="list-style">Immediate Needs Assessment</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Cast Management</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Vocational Rehabilitation</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li >
+          <a style="text-decoration:none; color:#000;" href="#">News</a>
+        </li>
+        <li >
+          <a style="text-decoration:none; color:#000;" href="#">Case Studies</a>
+        </li>
+        <li class="dropdown">
+          <a style="text-decoration:none;" href="#"><td class="dropb hov-blue">Resources</td>
+            <span class="caret"></span>
+          </a>
+          <div class="dropdown-meun">
+            <ul class="dropdown-contaner children" role="menu">
+                <a href="#" class="list-style">What is rehabilitation?</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Good lifestyle choices</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Staying positive</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Being positve</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Advice for friends and family</a>
+              </li>
+              <li>
+                <a href="#" class="list-style">Liveing with pain</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a style="text-decoration:none; color:#000;" href="#">Contact Us</a>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
   </div>
   </div>
+</div>
+</div>
 </header>
 <main>
   <div class="bannerr" style="background-image: url(https://www.bridgecasemanagement.co.uk/uploads/pages/1/homepage-IPrf.jpg);background-position: center;background-size: cover;">
     <div class="container ">
       <div class="aline-btn-text">
-      <a href="#" class="bannerr-button button" style="text-decoration:none; color: #fff;">Bridge Case Management</a>
+      <a href="#" id="bannerf" class="bannerr-button button" style="text-decoration:none; color: #fff;">Bridge Case Management</a>
       <p class="bannerr-text">Welcome to our sight</p>
     </div>
     </div>
@@ -282,18 +387,18 @@
     <div class="conheight">
     <div class="tabel">
       <ul class="tabel-links">
-        <li class="active link1tab">
-          <a href="#tabel1">
+        <li class="active list-i1 link1tab">
+          <a style="cursor:pointer">
             Latest News
           </a>
         </li>
         <li class="list-i2 link2tab">
-          <a href="#tabel2">
+          <a style="cursor:pointer">
             Testimonials
           </a>
         </li>
         <li class="list-i3 link3tab">
-          <a href="#tabel3">
+          <a style="cursor:pointer">
             Case Studies
           </a>
         </li>
@@ -307,20 +412,20 @@
                 <div class="cal-span-sm">
                   <p class="small-w">
                     <a href="#">
-                      <img src="../images/f-logo.png" alt="logo of Bridge Case Management" class="img-border news-img img-base">
+                      <img src="images/f-logo.png" alt="logo of Bridge Case Management" class="img-border news-img img-base">
                     </a>
                   </p>
                 </div>
                 <div class="cal-span-md">
                   <div class="titel-sz">
-                    <a href="#" style="color:#01009a">
+                    <a href="#" class="link">
                       Our team keeps growing!
                     </a>
                   </div>
                   <p class="fstex"><td>
                     Julia has joined our administration team to assist our growing team of case managers. Julia has experience of working wi...
                   </td></p>
-                  <a href="#" style="color:#22d3c5;">
+                  <a href="#">
                     <strong class="point">
                       Read More
                     </strong>
@@ -335,22 +440,21 @@
                 <div class="cal-span-sm">
                   <p class="small-w">
                     <a href="#">
-                      <img src="../images/f-logo.png" alt="logo for Bridge Case Management" class="img-border-1">
+                      <img src="images/f-logo.png" alt="logo for Bridge Case Management" class="img-border-1">
                     </a>
                   </p>
                 </div>
 
                 <div class="cal-span-md">
-                  <div class="titel-sz
-                  ">
-                    <a href="#" style="color:#01009a">
+                  <div class="titel-sz">
+                    <a href="#" class="link">
                       The Bridge Team grows
                     </a>
                   </div>
                   <p class="fstex">
                     We have three more members of the Bridge family. Mimi Basri and Jenny Stokes, both nurses with excellent clinical experi...
                   </p>
-                  <a href="#" style="color:#22d3c5;" >
+                  <a href="#">
                     <strong class="point">
                       Read More
                     </strong>
@@ -362,22 +466,22 @@
         </div>
       </div>
 
-      <div id="tabel2" class=" tabel" style="padding:25px; display:none">
+      <div id="tabel2" class=" tabel" style="padding:25px">
         <div class="row">
           <div class="..">
             <div class="item">
               <div class="row news">
                 <div class="..">
-                  <div class="titel-sz">
-                    <a href="#">
+                  <div class="titel-sz lg-size">
+                    <a href="#" class="link">
                       Claimant Solicitor
                     </a>
                   </div>
-                  <p>
+                  <p class="pad">
                     Following the settlement of a claim one of the solicitors who we work with responded with an email, within it she s...
                   </p>
                   <a href="#">
-                    <strong class="point">
+                    <strong class="point lg-size">
                       Read More
                     </strong>
                   </a>
@@ -389,16 +493,16 @@
             <div class="item">
               <div class="row news">
                 <div class="..">
-                  <div class="titel-sz">
-                  <a href="#">
+                  <div class="titel-sz lg-size">
+                  <a href="#" class="link">
                     Andy - Client
                   </a>
                 </div>
-                <p>
+                <p class="pad">
                   I wanted to thank you for the way you handled my case It was always very reassuring to know I had you on the end of...
                 </p>
                 <a href="#">
-                  <strong class="point">
+                  <strong class="point lg-size">
                     Read More
                   </strong>
                 </a>
@@ -408,8 +512,8 @@
         </div>
       </div>
     </div>
-    <div id="tabel3" class="tabel" style="display: none;">
-      ""
+    <div id="tabel3" class="tabel">
+
       </div>
     </div>
     </div>
@@ -418,7 +522,7 @@
   </div>
 </div>
 </main>
-  <footer class="" style="background-color: #34495e">
+  <footer style="background-color: #34495e">
     <div class="footer-tabel" style="width:100%;">
       <div class="container">
         <div class="con">
@@ -461,7 +565,22 @@
         </div>
       </div>
     </div>
+    <div id="1"></div> <!-- target for a cooke alert -->
+  </div>
+  </div>
+  </div>
   </div>
   </footer>
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- jquery plugins below -->
+  <script src="js/slideReveal/dist/jquery.slidereveal.js"></script>
+  <script>
+    $(function($) {
+      var slider = $("#slider").slideReveal({
+  	     trigger: $("#trigger")
+       });
+     });
+  </script>
+  <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
