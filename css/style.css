@@ -111,7 +111,6 @@ div {
      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
      z-index: 200;
      font-size: 14px;
-     border: 0.5px solid black;
      padding: 0;
      text-align:left;
      overflow: auto;
@@ -135,9 +134,7 @@ div {
  .dropdown {
    color: black;
  }
-.list-style {
-  border-top:0.5px solid black ;
-}
+
 /*-----flexscreens----*/
 .flexscreen{
   display: flex;
@@ -148,6 +145,7 @@ div {
   display: inline-flex;
   justify-content: space-between;
 }
+
 /*-----hot-bar and nav-bar------------*/
 .cta-contain {
   box-sizing: border-box;
@@ -269,8 +267,11 @@ body {
   line-height:normal;
   color: #34495e;
 }
-/*--------------main--------------*/
 
+/*--------------main--------------*/
+.car{
+  /* overflow-x: hidden; */
+}
 /*------banner--------*/
 .bannerr {
   position:relative;
@@ -305,7 +306,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items:center;
+  height: 8px;
+  position: absolute;
+  top: 300px;
+  right: 0px;
 }
+
 /*----------------------*/
 .btn-menu {
   visibility: hidden;
@@ -329,6 +335,7 @@ h3{
   font-weight: bold;
   display: inline;
 }
+
 /*-----Three images--------*/
 .img1flex {
   width:410px;
@@ -402,6 +409,7 @@ h3{
   font-size: 16px;
   padding: 12px 20px;
 }
+
 /*-----Main body of text--------*/
 .paragraph-box {
   height: 400px;
@@ -439,6 +447,7 @@ h3{
     bottom: -648px;
     right: -265px;
 }
+
 /*-----tabe---------*/
 .tabel {
   display: inline-block;
@@ -573,6 +582,7 @@ ol {
   font-size: 15px;
   margin-top: 0;
 }
+
 /*-----------footer----------*/
 .footer-tabel {
  text-align: center;
@@ -620,6 +630,7 @@ h4 {
 .side_bar{
   flex-direction: column;
 }
+
 /*----------new media querys-----------*/
 @media (min-width: 310px) {
 
@@ -669,7 +680,6 @@ h4 {
  .bannerr-text {
     font-size:1.5rem;
     color: white;
-    position: relative;
     top:50px;
   }
  .paragraph-box {
@@ -735,6 +745,10 @@ h4 {
  }
  .aline-btn-text {
    padding-top:0px;
+   height: 8px;
+   position: absolute;
+   top: 240px;
+   right: 0px;
  }
 }
 @media (max-width:430px) {
@@ -747,6 +761,9 @@ h4 {
     font-size: 11px;
     justify-content: flex-end;
   }
+  .aline-btn-text {
+    visibility: hidden;
+  }
 }
 @media (min-width:431px) {
   .cover-bump {
@@ -754,6 +771,9 @@ h4 {
   }
   .box-cover {
     padding-top: 7px;
+  }
+  .aline-btn-text {
+    visibility: visible;
   }
 }
 @media (max-width:616px) {
@@ -780,6 +800,10 @@ h4 {
   }
   .aline-btn-text {
     padding-top: 60px;
+    height: 8px;
+    position: absolute;
+    top: 300px;
+    right: 0px;
   }
  .cover-bump {
    visibility: hidden;
@@ -866,6 +890,10 @@ h4 {
   }
   .aline-btn-text {
     padding-top: 114px;
+    height: 8px;
+    position: absolute;
+    top: 190px;
+    right: 0px;
   }
   .cover-bump {
     visibility: visible;
@@ -932,6 +960,12 @@ h4 {
   .cal-span-sm {
     width: 113.5px;
   }
+  .droplist {
+    border: 0.5px solid white;
+  }
+  .list-style {
+    border-top: 0.5px solid white;
+  }
 }
 @media (max-width:767) {
  .flexscreen{
@@ -939,8 +973,13 @@ h4 {
  }
 }
 @media (max-width:991) {
-
- .img-base {
+  .droplist {
+    border: 0.5px solid white;
+  }
+  .list-style {
+    border-top: 0.5px solid white
+  }
+   .img-base {
    width: 100%;
    height: auto;
  }
@@ -959,6 +998,12 @@ h4 {
 @media (min-width:1260px) {
   .container {
     width: 1230px;
+  }
+  .droplist {
+    border: 0.5px solid black;
+  }
+  .list-style {
+    border-top: 0.5px solid black;
   }
   .cal-span-xl {
     width:25%;
@@ -986,17 +1031,34 @@ h4 {
   .img-wh {
     width: 28%;
   }
+  .aline-btn-text {
+    padding-top: 114px;
+    height: 8px;
+    position: absolute;
+    top: 170px;
+    right: 170px;
+  }
 }
 
 /*----------jquery-------------*/
-#cookes {
+#cookie {
   z-index: 500;
   position: fixed;
   width: 100%;
   bottom: 0;
   height: 150px;
-  background-color: rgb(73, 117, 179);
+  background-color: rgb(5, 206, 124);
   color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#cookies {
+  width: 200px;
+  height: 50px;
+  background-color: rgb(34,211,197);
+  border-radius: 30px;
 }
 .sidenav {
   height: 100%;

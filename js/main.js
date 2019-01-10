@@ -1,13 +1,34 @@
 /*
-this is the code which brings up the coolkie alert which people can click to alow the use of coolkies and reove the div
+this is the code which brings up the coolkie alert which people can click to alow the use of coolkies and remove the div
 */
+//use sesion storige
+// do if else statements to make sure that if cookie is there dont show div
+//test zone for "code" below
+
+//------------------------------------------------------------------------------------
+
+//------------------------------------------------------------------------------------
+//test zone ^ for "code"
+
 
 $(document).ready(function(){
-  $('#1').append("<div id='cookes'> We use technical and analytics cookies to ensure that we give you the best experience on our websight! click this to accept<div>");
-  $("#cookes").click(function(){
-    $(this).remove();
+  if (typeof(Storage) !== "undefined") {
+    let tess = sessionStorage.getItem("cookie")
+    if (!tess) {
+      $('#1').append("<div id='cookie'> We use technical and analytics cookies to ensure that we give you the best experience on our websight! <button id=cookies> click this to accept</button> <div>"); ;
+    } else {
+      document.getElementById("1")
+    }
+  }
+})
+$(document).ready(function(){
+  $("#cookies").click(function(){
+    sessionStorage.setItem("cookie", "true")
+    $("#cookie").remove();
   });
 });
+
+
 /*--------------this is the end of the coolkie code -------------*/
 
 /*
@@ -63,11 +84,15 @@ $(document).ready(function(){
 */
 
 
-
-// /*------------------------------*/
-// $(document).ready(function(){
-//   $('.link3tab').click(function() {
-//     window.alert('it works');
-//     });
-// });
  /*----JQuery plugin---------------------------------*/
+
+ $(document).ready(function(){
+   $('.car').slick({
+     //setting-name: setting-value;
+     dots: true,
+     arrows: false,
+     mobileFirst: true,
+     autoplay: true,
+     autoplaySpeed: 7000,
+   });
+ });
